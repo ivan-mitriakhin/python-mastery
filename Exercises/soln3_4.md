@@ -70,7 +70,8 @@ class Stock:
     @property
     def shares(self):
         return self._shares
-    @shares.setter
+
+    @shares.setters
     def shares(self, value):
         if not isinstance(value, int):
             raise TypeError('Expected an integer')
